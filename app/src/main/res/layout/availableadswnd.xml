@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:title="@string/settings"
+        app:titleMarginStart="115dp" />
+
+    <ImageButton
+        android:id="@+id/btn_closead"
+        android:layout_width="47dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="4dp"
+        android:background="#000000"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/close_ad_button"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/ad_bg1"
+        android:layout_width="94dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/ads_bg" />
+
+    <ImageView
+        android:id="@+id/secad_bg"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg1"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg1"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg1"
+        app:srcCompat="@drawable/_0secad_bg" />
+
+    <ImageView
+        android:id="@+id/secad_ico"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/secad_bg"
+        app:layout_constraintEnd_toEndOf="@+id/secad_bg"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/secad_bg"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg1"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/watch_videos" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="88dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/secadtxt"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg1"
+        app:layout_constraintTop_toBottomOf="@+id/secad_bg" />
+
+    <ImageButton
+        android:id="@+id/btn_startad1"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_bg1"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg1"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg1"
+        app:srcCompat="@drawable/not_available_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ad_bg2"
+        android:layout_width="96dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/ads_bg" />
+
+    <ImageView
+        android:id="@+id/quickad_bg"
+        android:layout_width="96dp"
+        android:layout_height="92dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg2"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg1"
+        app:srcCompat="@drawable/quick_ad_bg" />
+
+    <ImageView
+        android:id="@+id/quickad_ico"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quickad_bg"
+        app:layout_constraintEnd_toEndOf="@+id/quickad_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/quickad_bg"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg2"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/quick_ad_ico" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="86dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/quickad"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/quickad_bg" />
+
+    <ImageButton
+        android:id="@+id/btn_startad2"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg2"
+        app:srcCompat="@drawable/start_ad_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/ad_bg3"
+        android:layout_width="94dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/ads_bg" />
+
+    <ImageView
+        android:id="@+id/payday_bg"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg3"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg3"
+        app:srcCompat="@drawable/payday_bg" />
+
+    <ImageView
+        android:id="@+id/payday_ico"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/payday_bg"
+        app:layout_constraintEnd_toEndOf="@+id/payday_bg"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/payday_bg"
+        app:layout_constraintTop_toTopOf="@+id/ad_bg3"
+        app:layout_constraintVertical_bias="0.647"
+        app:srcCompat="@drawable/pay_day_ico" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="73dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/paydayoffers"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg3"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg3"
+        app:layout_constraintTop_toBottomOf="@+id/payday_bg" />
+
+    <ImageButton
+        android:id="@+id/btn_startad3"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="4dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ad_bg3"
+        app:layout_constraintEnd_toEndOf="@+id/ad_bg3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ad_bg3"
+        app:srcCompat="@drawable/start_ad_button"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

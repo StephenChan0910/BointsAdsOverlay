@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SystemOverlay</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="start">Next</string>
+    <string name="stop">Next</string>
+    <string name="previous">Previous</string>
+    <string name="settings">Settings</string>
+    <string name="adsSettings">Ads Settings</string>
+    <string name="bannerAds">Banner Ads</string>
+    <string name="redDotAds">Red Dot Ads</string>
+    <string name="sound">Sound</string>
+    <string name="animation">Animation</string>
+    <string name="hello_first_fragment">This is Ads Overlay app</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="secadtxt">30-second video ad</string>
+    <string name="quickad">Quick ad</string>
+    <string name="paydayoffers">Payday Offers</string>
+    <string name="notavailable">NOT AVAILABLE</string>
+    <string name="startad">START</string>
+</resources>
